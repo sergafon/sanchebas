@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SANCHEBAS & ВАЛЕРА | Бесплатный гайд: ChatGPT на телефоне</title>
-<meta name="description" content="ChatGPT на Android и iPhone. Без лишней хуйни, всё по шагам.">
+<title>SANCHEBAS & ВАЛЕРА | Бесплатный гайд: ChatGPT на телефоне и оплата Plus</title>
+<meta name="description" content="ChatGPT на Android и iPhone. Оплата Plus картой ZARUB. Без лишней хуйни, всё по шагам.">
 <meta property="og:title" content="SANCHEBAS & ВАЛЕРА | БЕСПЛАТНЫЙ ГАЙД">
-<meta property="og:description" content="ChatGPT на Android и iPhone. БЕЗ ЛИШНЕЙ ХУЙНИ! ВСЁ ПО ШАГАМ">
+<meta property="og:description" content="ChatGPT на Android и iPhone. Оплата Plus картой ZARUB. БЕЗ ЛИШНЕЙ ХУЙНИ! ВСЁ ПО ШАГАМ">
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 17px/1.5 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; color: #111; background: #f4f4f5; }
@@ -14,7 +14,7 @@
   .label { font-size: 13px; font-weight: 700; letter-spacing: .04em; color: #666; }
   h1 { font-size: 30px; line-height: 1.15; margin: 6px 0 16px; }
   .tabs { display: flex; gap: 8px; margin-bottom: 20px; }
-  .tabs button { flex: 1; padding: 14px; font: inherit; font-weight: 700; border: 2px solid #111; border-radius: 12px; background: #fff; color: #111; cursor: pointer; }
+  .tabs button { flex: 1; padding: 14px 10px; font: inherit; font-weight: 700; border: 2px solid #111; border-radius: 12px; background: #fff; color: #111; cursor: pointer; }
   .tabs button[aria-selected="true"] { background: #111; color: #fff; }
   .intro { background: #111; color: #fff; border-radius: 16px; padding: 18px; margin-bottom: 16px; }
   .intro b { display: block; font-size: 20px; }
@@ -23,6 +23,7 @@
   .step p { margin: 0; }
   .note { margin-top: 10px !important; padding: 10px 12px; background: #fff7d6; border-radius: 10px; font-size: 15px; }
   .btn { display: block; margin: 10px 0; padding: 14px; text-align: center; font-weight: 800; color: #fff; background: #10a37f; border-radius: 12px; text-decoration: none; }
+  .step .caption { margin: -4px 0 10px; font-size: 13px; color: #666; text-align: center; }
   .step img { display: block; width: 100%; max-width: 300px; height: auto; margin: 14px auto 0; border-radius: 14px; border: 1px solid #ddd; }
   .way { font-size: 24px; margin: 28px 0 12px; }
   .done { text-align: center; }
@@ -35,12 +36,13 @@
   <div class="label">SANCHEBAS & ВАЛЕРА | БЕСПЛАТНЫЙ ГАЙД</div>
   <h1 id="title">ChatGPT на Android</h1>
 
-  <div class="tabs" role="tablist">
-    <button role="tab" data-os="android" aria-selected="true">Android</button>
-    <button role="tab" data-os="iphone" aria-selected="false">iPhone</button>
+  <div class="tabs" role="tablist" aria-label="Гайды по ChatGPT">
+    <button id="tab-android" role="tab" data-os="android" aria-controls="android" aria-selected="true" tabindex="0">Android</button>
+    <button id="tab-iphone" role="tab" data-os="iphone" aria-controls="iphone" aria-selected="false" tabindex="-1">iPhone</button>
+    <button id="tab-pay" role="tab" data-os="pay" aria-controls="pay" aria-selected="false" tabindex="-1">Оплата</button>
   </div>
 
-  <section id="android">
+  <section id="android" role="tabpanel" aria-labelledby="tab-android" tabindex="0">
     <div class="intro">
       <b>БЕЗ ЛИШНЕЙ ХУЙНИ!</b>
       <b>ВСЁ ПО ШАГАМ</b>
@@ -72,7 +74,7 @@
       Войди или зарегистрируйся любым удобным способом.<br>
       Для входа используй VPN.<br>
       Пока осваиваем бесплатную версию.<br>
-      Оплату Plus разберём в отдельном гайде.</p>
+      Оплата Plus — во вкладке «Оплата».</p>
       <p class="note">Всё работает? Способ 2 тебе не нужен — листай в самый низ.</p>
     </div>
 
@@ -147,7 +149,7 @@
       Войди или зарегистрируйся любым удобным способом.<br>
       Для входа используй VPN.<br>
       Пока осваиваем бесплатную версию.<br>
-      Оплату Plus разберём в отдельном гайде.</p>
+      Оплата Plus — во вкладке «Оплата».</p>
     </div>
 
     <div class="step done">
@@ -156,12 +158,12 @@
     </div>
   </section>
 
-  <section id="iphone" hidden>
+  <section id="iphone" role="tabpanel" aria-labelledby="tab-iphone" tabindex="0" hidden>
     <div class="intro">
       <b>БЕЗ ЛИШНЕЙ ХУЙНИ!</b>
       <b>ВСЁ ПО ШАГАМ</b>
       <p>App Store → США → ChatGPT<br>
-      Пополнение баланса и Plus разберём в отдельном гайде.</p>
+      Оплата Plus — во вкладке «Оплата».</p>
     </div>
 
     <div class="step">
@@ -234,8 +236,193 @@
       <p>Открой ChatGPT и зарегистрируйся любым удобным способом.<br>
       Для входа понадобится VPN.<br>
       Пока осваиваем бесплатную версию.<br>
-      Гайд по оплате Plus добавим позже.<br>
+      Оплата Plus — во вкладке «Оплата».<br>
       Можно вернуть российский регион App Store обратно.</p>
+    </div>
+
+    <div class="step done">
+      <h2>ГОТОВО!</h2>
+      <a class="btn" href="https://t.me/sanchebas_ai" target="_blank" rel="noopener">Telegram: @sanchebas_ai</a>
+    </div>
+  </section>
+
+  <section id="pay" role="tabpanel" aria-labelledby="tab-pay" tabindex="0" hidden>
+    <div class="intro">
+      <b>БЕЗ ЛИШНЕЙ ХУЙНИ!</b>
+      <b>ВСЁ ПО ШАГАМ</b>
+      <p>Подключаем платный тариф нашему Валере.<br>
+      Два способа: своя карта ZARUB или сервис Kupikod.<br>
+      Способ 1 — карта для любых оплат и подписок.<br>
+      Способ 2 — подписка по ID, без выпуска карты.<br>
+      Ссылки прямо на нужных шагах.<br>
+      Всё, погнали, блядь!</p>
+    </div>
+
+    <h2 class="way">СПОСОБ 1. Картой ZARUB</h2>
+
+    <div class="step">
+      <h2>ШАГ 1. Узнаём сумму в ChatGPT</h2>
+      <p>Открой страницу с тарифами:</p>
+      <a class="btn" href="https://chatgpt.com/pricing" target="_blank" rel="noopener">ОТКРЫТЬ ТАРИФЫ CHATGPT</a>
+      <p>Если попросит, войди в аккаунт.<br>
+      Для входа используй VPN.<br>
+      Выбери тариф: Go, Plus или Pro.<br>
+      Нажми кнопку покупки у выбранного тарифа.<br>
+      Дойди до формы оплаты. Запиши сумму и валюту.<br>
+      Пока не плати.</p>
+      <p class="note"><b>Тарифы ChatGPT, $ в месяц:</b><br>
+      Go — $8.<br>
+      Plus — $20.<br>
+      Pro — $100, $200 или $500. Чем дороже, тем выше лимиты.<br>
+      Проверено 17 ноября 2026 года.</p>
+      <p class="note">В форме не доллары?<br>
+      Можно пополнить с запасом. Лишнее останется на карте и уйдёт на следующую оплату.<br>
+      А можно спросить в <a href="https://t.me/zarub_help_bot" target="_blank" rel="noopener">поддержке ZARUB</a>: сколько долларов нужно на карте с учётом конвертации и комиссии.<br>
+      Сумму и валюту возьми из формы.</p>
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 2. Открываем бота ZARUB</h2>
+      <p>Открой ссылку:</p>
+      <a class="btn" href="https://t.me/zarub_robot?start=ref_YzurIU" target="_blank" rel="noopener">ОТКРЫТЬ БОТА ZARUB</a>
+      <p class="caption">Реферальная ссылка.</p>
+      <p>Нажми «Запустить».<br>
+      Откроется приложение ZARUB.<br>
+      На главном экране два баланса: «Баланс» и «Баланс карт».<br>
+      Сначала пополни баланс. Карту выпустим после.</p>
+      <img src="img/pay-bot-main.jpg" alt="Главный экран ZARUB: баланс, баланс карт и карта Visa" width="377" height="584" loading="lazy">
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 3. Пополняем баланс ZARUB</h2>
+      <p>Нажми «Пополнить баланс».<br>
+      Выбери СБП.<br>
+      Введи сумму в рублях. Минимум 100 ₽, максимум 200 000 ₽.<br>
+      Сумма должна покрыть выпуск карты, подписку и комиссии.<br>
+      Нажми «Далее».<br>
+      Внизу увидишь «К зачислению», «Курс», «Комиссию» и «Итого к оплате».<br>
+      Проверь их перед оплатой.<br>
+      Оплати через своё банковское приложение.<br>
+      Дождись зачисления на баланс ZARUB.</p>
+      <img src="img/pay-topup-method.jpg" alt="Выбор способа оплаты при пополнении счета ZARUB" width="368" height="579" loading="lazy">
+      <img src="img/pay-topup-amount.jpg" alt="Сумма 5 000 ₽: курс, комиссия и сумма к зачислению" width="376" height="579" loading="lazy">
+      <p class="note"><b>За что платим:</b><br>
+      Выпуск виртуальной Visa — $19. Обслуживание — $0 в месяц.<br>
+      Плюс сумма подписки из шага 1.<br>
+      Плюс комиссии: СБП — 7%, минимум 1&nbsp;₽. Перевод на карту — 1,5%. Оплата картой — $0,35.<br>
+      <a href="https://zarub.io/tariffs#calculator" target="_blank" rel="noopener">Калькулятор ZARUB</a> считает выпуск и пополнение. Комиссию $0,35 за платёж учти отдельно.<br>
+      После успешного выпуска карты стоимость выпуска не возвращают.<br>
+      Тарифы проверены 16 ноября 2026 года.</p>
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 4. Выпускаем и пополняем карту</h2>
+      <p>Когда баланс пополнен, вернись на главный экран.<br>
+      Нажми «Выпустить карту».<br>
+      Выбери VISA за $19. Она поддерживает 3DS.<br>
+      Оплати выпуск с баланса ZARUB.<br>
+      Дождись карты в блоке «Ваши карты».<br>
+      Нажми «Пополнить» и переведи на карту сумму для подписки.<br>
+      Проверь, что деньги на карте, а не только на балансе ZARUB.<br>
+      Нажми «Реквизиты».</p>
+      <p class="note">Если в форме ChatGPT доллары, положи на карту итоговую сумму плюс $0,35 за платёж.<br>
+      Если валюта другая, используй сумму, которую уточнил в шаге 1.</p>
+      <img src="img/pay-card-shop.jpg" alt="Каталог карт ZARUB: VISA за 19 долларов" width="377" height="582" loading="lazy">
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 5. Вводим карту ZARUB</h2>
+      <p>Вернись на страницу оплаты ChatGPT.<br>
+      Выбери оплату картой.<br>
+      Введи номер карты, срок и CVV из реквизитов ZARUB.<br>
+      Заполни имя и платёжный адрес по данным для твоей карты.<br>
+      Проверь тариф, сумму и период подписки.</p>
+      <p class="note">Не знаешь, какой адрес или индекс указать? Не выдумывай.<br>
+      Спроси <a href="https://t.me/zarub_help_bot" target="_blank" rel="noopener">поддержку ZARUB</a> до оплаты.<br>
+      Не отправляй никому пароль от ChatGPT, CVV и коды подтверждения.</p>
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 6. Подтверждаем оплату</h2>
+      <p>Нажми кнопку оплаты.<br>
+      Если появится поле для одноразового кода, открой бота ZARUB в Telegram.<br>
+      Скопируй OTP-код из сообщения бота.<br>
+      Вставь его в поле на странице оплаты.<br>
+      Если следом запросит 3DS-пароль, возьми его из реквизитов карты ZARUB.<br>
+      Введи пароль и подтверди платёж.<br>
+      Дождись результата на странице ChatGPT.</p>
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 7. Проверяем тариф</h2>
+      <p>Вернись в ChatGPT.<br>
+      Обнови страницу.<br>
+      Открой настройки аккаунта.<br>
+      Проверь, что включился выбранный тариф.</p>
+      <p class="note"><b>Тариф не появился?</b><br>
+      Открой карту в ZARUB и нажми «История операций».<br>
+      Найди платёж и посмотри статус.<br>
+      «Одобрено», а тариф не включился — напиши в <a href="https://help.openai.com/" target="_blank" rel="noopener">поддержку ChatGPT</a>. Укажи дату и сумму платежа.<br>
+      «В ожидании» — повторно не плати. Если статус не меняется, напиши в <a href="https://t.me/zarub_help_bot" target="_blank" rel="noopener">поддержку ZARUB</a>.<br>
+      «Отклонено» — проверь баланс карты и реквизиты.</p>
+    </div>
+
+    <h2 class="way">СПОСОБ 2. Через Kupikod</h2>
+
+    <div class="step">
+      <h2>ШАГ 1. Открываем Kupikod</h2>
+      <p>Открой страницу подписки:</p>
+      <a class="btn" href="https://kupikod.com/console/chatgpt" target="_blank" rel="noopener">ОТКРЫТЬ CHATGPT В KUPIKOD</a>
+      <p>Вкладку «По ID» не меняй: подписку включат на твой аккаунт.<br>
+      Логин и пароль не понадобятся.</p>
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 2. Выбираем тариф</h2>
+      <p>Выбери срок и тариф: Go, Plus или Pro.<br>
+      Для Plus нажми карточку «Plus 1 месяц».<br>
+      Цены за месяц на 17 ноября 2026 года: Go — 892 ₽, Plus — 2 349 ₽, Pro x5 — 13 117 ₽, Pro x20 — 22 486 ₽.</p>
+      <img src="img/kupikod-tariffs.jpg" alt="Тарифы ChatGPT в Kupikod: Go, Plus, Pro x5 и Pro x20 на 1 месяц" width="780" height="1090" loading="lazy">
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 3. Указываем email</h2>
+      <p>Введи свой Email. На него придёт чек и ссылка на заказ.<br>
+      Поставь галочку «На моём аккаунте отсутствует активная подписка».<br>
+      Переключатель про Kupikod ID оставь как есть: он отправляет чек на почту.</p>
+      <img src="img/kupikod-form.jpg" alt="Форма заказа Kupikod: email, галочка про подписку и переключатель с чеком" width="780" height="1490" loading="lazy">
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 4. Оплачиваем заказ</h2>
+      <p>Нажми «Купить».<br>
+      Выбери способ оплаты: Купикоины, СБП или Картой.<br>
+      Оплати.<br>
+      После оплаты откроется страница заказа.</p>
+      <img src="img/kupikod-pay.jpg" alt="Оплата заказа Kupikod: способы оплаты, итог 2 349 ₽ и кнопка «Купить»" width="780" height="1150" loading="lazy">
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 5. Вводим ChatGPT ID</h2>
+      <p>На странице заказа нажми «Получить заказ».<br>
+      Введи свой ID по инструкции на странице заказа.<br>
+      Где взять ID: войди в ChatGPT в браузере, не в приложении.<br>
+      Открой <a href="https://chatgpt.com/api/auth/session" target="_blank" rel="noopener">chatgpt.com/api/auth/session</a>.<br>
+      Найди раздел «account» и скопируй поле «id». Это UUID из 36 символов.<br>
+      Не бери «user.id»: он начинается с «user-».</p>
+      <p class="note">Отправляй только поле «id».<br>
+      На странице сессии есть токен доступа. Целиком её не копируй и никому не показывай.</p>
+    </div>
+
+    <div class="step">
+      <h2>ШАГ 6. Ждём доставку</h2>
+      <p>Вернись на страницу заказа.<br>
+      Дождись статуса «Заказ доставлен».<br>
+      Обычно это занимает до 40 минут.<br>
+      Подписка может появиться в аккаунте ещё в течение 30 минут.</p>
+      <p class="note"><b>Заказ не пришёл?</b><br>
+      Напиши в <a href="https://t.me/kupikod_bot" target="_blank" rel="noopener">поддержку Kupikod</a> и укажи номер заказа.<br>
+      Если подписка не активировалась в срок, возврат возможен.</p>
     </div>
 
     <div class="step done">
@@ -245,16 +432,36 @@
   </section>
 </main>
 <script>
-  const tabs = document.querySelectorAll('.tabs button');
-  function show(os) {
-    tabs.forEach(b => b.setAttribute('aria-selected', b.dataset.os === os));
-    document.getElementById('android').hidden = os !== 'android';
-    document.getElementById('iphone').hidden = os !== 'iphone';
-    document.getElementById('title').textContent = os === 'iphone' ? 'ChatGPT на iPhone' : 'ChatGPT на Android';
+  const tabs = [...document.querySelectorAll('.tabs button')];
+  const titles = { android: 'ChatGPT на Android', iphone: 'ChatGPT на iPhone', pay: 'Оплата ChatGPT Plus' };
+  function show(tab) {
+    tabs.forEach(b => {
+      const active = b.dataset.os === tab;
+      b.setAttribute('aria-selected', active);
+      b.tabIndex = active ? 0 : -1;
+      document.getElementById(b.dataset.os).hidden = !active;
+    });
+    document.getElementById('title').textContent = titles[tab];
   }
-  tabs.forEach(b => b.addEventListener('click', () => { show(b.dataset.os); history.replaceState(null, '', '#' + b.dataset.os); }));
+  tabs.forEach((b, index) => {
+    b.addEventListener('click', () => {
+      show(b.dataset.os);
+      history.replaceState(null, '', '#' + b.dataset.os);
+    });
+    b.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+      else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = tabs.length - 1;
+      else return;
+      event.preventDefault();
+      tabs[next].focus();
+      tabs[next].click();
+    });
+  });
   const h = location.hash.slice(1);
-  show(h === 'iphone' || h === 'android' ? h : (/iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'iphone' : 'android'));
+  show(tabs.some(b => b.dataset.os === h) ? h : (/iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'iphone' : 'android'));
 </script>
 </body>
 </html>
