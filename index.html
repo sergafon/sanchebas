@@ -38,6 +38,13 @@
   .btn { display: block; margin: 10px 0; padding: 14px; text-align: center; font-weight: 800; color: #fff; background: #10a37f; border-radius: 12px; text-decoration: none; }
   .step .caption { margin: -4px 0 10px; font-size: 13px; color: #666; text-align: center; }
   .step img { display: block; width: 100%; max-width: 300px; height: auto; margin: 14px auto 0; border-radius: 14px; border: 1px solid #ddd; }
+  .plans-table-wrap { overflow-x: auto; margin: 14px 0 10px; border: 1px solid #ddd; border-radius: 12px; }
+  .plans-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 14px; line-height: 1.35; }
+  .plans-table th, .plans-table td { padding: 10px 8px; text-align: left; vertical-align: top; border-bottom: 1px solid #e5e5e5; }
+  .plans-table th { background: #111; color: #fff; font-size: 13px; }
+  .plans-table th:not(:first-child), .plans-table td:not(:first-child) { text-align: center; }
+  .plans-table tr:last-child td { border-bottom: 0; }
+  .plans-table td:first-child { font-weight: 700; background: #fafafa; }
   .way { font-size: 24px; margin: 28px 0 12px; }
   .done { text-align: center; }
   .done .btn { background: #229ed9; }
@@ -274,15 +281,19 @@
     <div class="step">
       <h2>СРАВНЕНИЕ ТАРИФОВ CHATGPT</h2>
       <p>Цены указаны за месяц. Лимиты и доступность отдельных функций могут меняться — перед оплатой проверь сумму на официальной странице.</p>
-      <p style="margin-top:12px"><b>🆓 Free — 0 $</b><br>
-      Для знакомства: чаты и базовые функции. Файлы, картинки, голос, память и исследования — с ограничениями.</p>
-      <p style="margin-top:12px"><b>🟢 Go — 8 $/мес</b><br>
-      Всё из Free, но больше сообщений, загрузок и генерации картинок. Память шире. В некоторых странах возможна реклама.</p>
-      <p style="margin-top:12px"><b>💚 Plus — 20 $/мес</b><br>
-      Больше моделей и рассуждений, проекты, задачи, свои GPT, Codex и Deep Research. Оптимальный вариант для работы и учёбы.</p>
-      <p style="margin-top:12px"><b>🚀 Pro — 100, 200 или 500 $/мес</b><br>
-      Самые высокие лимиты и Pro-модели. Для тех, кто работает с ИИ каждый день.</p>
-      <p class="note"><b>Коротко:</b> попробовать — Free; нужны лимиты — Go; работа и проекты — Plus; постоянная тяжёлая нагрузка — Pro.</p>
+      <div class="plans-table-wrap">
+        <table class="plans-table">
+          <thead><tr><th>Что сравниваем</th><th>🆓 Free<br>0 $</th><th>🟢 Go<br>8 $/мес</th><th>💚 Plus<br>20 $/мес</th><th>🚀 Pro<br>100/200/500 $</th></tr></thead>
+          <tbody>
+            <tr><td>Для кого</td><td>Попробовать</td><td>Нужны лимиты</td><td>Работа и учёба</td><td>ИИ каждый день</td></tr>
+            <tr><td>Сообщения и файлы</td><td>Ограниченно</td><td>Больше</td><td>Ещё больше</td><td>Максимум</td></tr>
+            <tr><td>Модели и рассуждения</td><td>Базовые</td><td>Больше доступа</td><td>Продвинутые</td><td>Максимальные</td></tr>
+            <tr><td>Картинки, голос, память</td><td>Лимиты</td><td>Расширено</td><td>Расширено</td><td>Самые высокие лимиты</td></tr>
+            <tr><td>Проекты, свои GPT, Codex, Deep Research</td><td>Не всё доступно</td><td>Часть функций</td><td>Да</td><td>Да, с максимумом лимитов</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note"><b>Вывод:</b> Free — для знакомства; Go — если Free заканчивается; Plus — оптимальный рабочий вариант; Pro — для постоянной тяжёлой нагрузки.</p>
       <a class="btn" href="https://chatgpt.com/pricing" target="_blank" rel="noopener">ПРОВЕРИТЬ ЦЕНЫ НА CHATGPT</a>
       <p class="caption">Проверено 19 ноября 2026 года. API оплачивается отдельно.</p>
     </div>
